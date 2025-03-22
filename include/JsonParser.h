@@ -1,15 +1,6 @@
 #include<iostream>
 #include<string>
 #include<fstream>
-/*
-    number,
-    string,
-    boolean,
-    array,
-    object,
-    null
-*/
-
 
 class JsonParser {
     public:

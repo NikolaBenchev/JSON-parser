@@ -33,7 +33,6 @@ void JsonParser::processInput(std::string inputLine) {
     }
     std::cout << currWord << std::endl;
 }
-
 void JsonParser::validate(std::string fileName) {
     std::string currLine;
 
