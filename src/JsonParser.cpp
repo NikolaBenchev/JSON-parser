@@ -1,6 +1,7 @@
-#include "../include/JsonParser.h"
 #include <string.h>
 #include<vector>
+#include<fstream>
+#include "../include/JsonParser.h"
 
 JsonParser::JsonParser() {
 
@@ -41,4 +42,14 @@ void JsonParser::validate(std::string fileName) {
     while (getline(file, currLine)) {
         std::cout << currLine << std::endl;
     }
+}
+Object* JsonParser::parseFile(std::string fileName) {
+    std::string currLine;
+    std::ifstream jsonFile(fileName);
+
+    while(std::getline (jsonFile, currLine)) {
+        std::cout << currLine << std::endl;
+    }
+
+    jsonFile.close();
 }

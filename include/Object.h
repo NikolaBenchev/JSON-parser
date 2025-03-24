@@ -1,6 +1,5 @@
 class Object {
     public:
-        virtual void f() = 0;
-    
+        virtual void print(int numberOfTabs = 0) = 0;
     private:
 };

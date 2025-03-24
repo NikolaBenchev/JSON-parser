@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<fstream>
+#include "./Object.h"
 
 class JsonParser {
     public:
@@ -10,4 +11,5 @@ class JsonParser {
     private:
         void processInput(std::string inputLine);
         void validate(std::string fileName);
+        Object* parseFile(std::string fileName);
 };
